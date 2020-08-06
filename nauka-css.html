@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nauka CSS</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="nauka-html.html">HTML</a>
+            <a href="nauka-css.html">CSS</a>
+            <a href="nauka-js.html">JavaScript</a>
+            <a href="dictionary.html">Słowniczek</a>
+            <a href="tools.html">Narzędzia</a>
+
+        </nav>
+    </header>
+    <main>
+        <h1>Tu są moje notatki z nauki CSS</h1>
+        <article>
+            <h2><a href="https://devstyle.mykajabi.com/products/wtf-2/categories/3127097/posts/10426043"
+                    target="_blank">tydzień 2, lekcja 3</a></h2>
+            <p>stylowanie po selektorze - podstawy</p>
+            <p>
+                stylujemy po klasie; <a href="https://css-tricks.com/almanac/selectors/c/class/"
+                    target="_blank">klasa</a> to atrybut znacznika HTML, który zapisujemy <code>class="name"</code><br>
+                aby ostylować klasę w CSS odwołujemy się do niej w następujący sposób:
+            </p>
+            <pre>
+                <code>
+                    .name {
+                        [tu podajemy właściwości, które chcemy ostylować]
+                    }
+                </code>
+            </pre>
+            <p>
+                będą one miały zastosowanie do każdego znacznika, któremu nadamy klasę <code>name</code>
+            </p>
+            <p>
+                możliwe jest też stylowanie po id, ale jest to zła praktyka, wówczas w CSS do id odwołujemy się w
+                następujący sposób:
+            </p>
+            <pre>
+                <code>
+                    #name {
+                        [tu określamy właściwości, które będą miały zastosowanie do znacznika, któremu nadamy to id]
+                    }
+                </code>
+            </pre>
+
+            <p>
+                specyficzność w CSS
+            </p>
+            <ol>
+                <li>!important</li>
+                <li>style=" " - tzw. znacznik inline</li>
+                <li>#id - stylowanie po id</li>
+                <li>.class - stylowanie po klasie</li>
+                <li>h1 - stylowanie po elemncie</li>
+            </ol>
+
+
+            <p>
+                specyficzność to coś w rodzaju klasyfikacji medalowej: drużyna, która zdobyła 1 złoty medal jest wyżej
+                niż tak, która zdobyła 10 srebrnych
+            </p>
+            <p>
+                np.:
+            </p>
+            <pre>
+                    <code class="red_background">
+                        body h1 {
+                            color: yellow;
+                        }
+
+                        h1 {
+                            color: red;
+                        }
+                    </code>
+                </pre>
+            <p>
+                w tej sytuacji stylowany element będzie żółty, bo jednocześnie stylujemy dwa elementy
+            </p>
+
+            <p>
+                Podsumowanie:
+            </p>
+            <ul>
+                <li>używaj pojedynczych słów z języka angielskiego do nazywania klas</li>
+                <li>nazywaj rzeczy zgodnie z ich funkcją na stronie</li>
+                <li>startuj z małej litery</li>
+                <li>nie zaczynaj od cyfry</li>
+                <li>jeśli musisz użyć dwóch lub więcej słów, to używaj kebab-case</li>
+                <li>nie zwiększaj specyficzności bez potrzeby, staraj się, żeby element miał jedną klasę</li>
+            </ul>
+
+        </article>
+    </main>
+
+</body>
+
+</html>

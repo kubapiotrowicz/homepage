@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nauka HTML</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="nauka-html.html">HTML</a>
+            <a href="nauka-css.html">CSS</a>
+            <a href="nauka-js.html">JavaScript</a>
+            <a href="dictionary.html">Słowniczek</a>
+            <a href="tools.html">Narzędzia</a>
+
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1>Tu są moje notatki z nauki HTML</h1>
+        </header>
+        <section>
+            <h2>Poniżej notatki z podziałem na poszczególne lekcje</h2>
+            <article>
+                <h3>
+                    <a href="https://devstyle.mykajabi.com/products/wtf-2/categories/3127097/posts/10426049"
+                        target="_blank">tydzień 2, lekcja 2</a>
+                </h3>
+
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body"
+                        target="_blank"><code>body</code></a></p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"
+                        target="_blank"><code>head</code></a></p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main"
+                        target="_blank"><code>main</code></a> -
+                    główna część dokumentu</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"
+                        target="_blank"><code>section</code></a> -
+                    sekcja, jak np. sport w gazecie; sekcją można oznaczyć tę część strony, która ma nagłówke h2</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
+                        target="_blank"><code>article</code></a> -
+                    jak artykuł w gazecie, artykułem można oznaczyć tę część strony, która ma nagłówke h3</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"
+                        target="_blank"><code>header</code></a> -
+                    nagłówek dokumentu, sekcji, artykułu</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"
+                        target="_blank"><code>footer</code></a> -
+                    stopka dokumentu, sekcji, artykułu</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+                        target="_blank"><code>h1-h6</code></a> - nagłówki tytułowe dokumentów, sekcji, artykułów</p>
+                <p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre"
+                        target="_blank"><code>pre</code></a> używamy do podkreślenia kody, <a
+                        href="https://stackoverflow.com/questions/5371787/can-i-have-a-pre-tag-inside-a-p-tag-in-tumblr"
+                        target="_blank">nie można go zagnieżdżać</a> w
+                    tagu <code>p</code>
+                </p>
+                <p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id"
+                        target="_blank"><code>id</code></a> - to atrybut, który możemy nadać każdemu znacznikowi; za
+                    jego pomocą można stylować (ale to zła praktyka!); powinien być wykorzystywany do linkowania jako
+                    tzw. kotwica; id powinno być jedno unikatowe na stronę
+                </p>
+                <pre>
+                    <code>
+                        a href="#name"
+                    </code>
+                </pre>
+                <p>
+                    po kliknięciu w taki link zostaniemy przeniesieni w miejsce, w którym atrybut id został nadany
+                </p>
+            </article>
+
+            <article>
+                <h3>
+                    <a href="https://devstyle.mykajabi.com/products/wtf-2/categories/3127097/posts/10426049"
+                        target="_blank">tydzień 3, lekcja 2</a>
+                </h3>
+
+                <p>
+                    nowe znaczniki:
+                </p>
+                <ul>
+                    <li>br - znak nowej linii, samozamykający</li>
+                    <li>b - pogrubienie teksty</li>
+                    <li>strong - podkreślenie istotności</li>
+                    <li>i - pochylony tekst</li>
+                    <li>em - szydercze podkreślenie, też pochyla</li>
+                    <li>a - linki zewnętrzne i wewnątrz dokumentu</li>
+                    <li>nav - nawigacja</li>
+                    <li>img - też samozamykający się, atrybyt src="" alt=""</li>
+                </ul>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+                        target="_blank">atrybuty globalne</a></p>
+                <ul>
+                    <li>id - unikalne oznaczenie elementu, nazwa może być użyta tylko jeden raz na stronie</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>
+                    <a href="https://devstyle.mykajabi.com/products/wtf-2/categories/3127097/posts/10426038"
+                        target="_blank">tydzień 3, lekcja 6</a>
+                </h3>
+
+                <p>Kody HTTP:</p>
+                <ul>
+                    <li>1xx - hold on</li>
+                    <li>2xx - here you go</li>
+                    <li>3xx - go away - szukasz w złym miejscu, ale wskażę Ci odpowiednie</li>
+                    <li>4xx - you fucked up</li>
+                    <li>5xx - I fucked up...</li>
+                </ul>
+
+                <p>
+                    root - slash "/" - bardzo ważny!!!<br>
+                    jeżeli podajemy ścieżkę bewzględną np. do obrazka, to piszemy:
+                </p>
+                <pre>
+                    <code>
+                        img src="<b>/</b>img/wtf.svg" alt="logo wtf: co ten frontend"
+                    </code>
+                </pre>
+                <p>
+                    przy takim zapisie, jeżeli jesteśmy na podstronie, to przeglądarka szuka zdjęcia pod adresem:
+                    cotenfrontend.pl/img/wtf.svg
+                </p>
+                <p>
+                    ścieżka względna natomiast wygląda tak:
+                </p>
+                <pre>
+                    <code>
+                        img src="img/wtf.svg" alt="logo wtf: co ten frontend"
+                    </code>
+                </pre>
+                <p>
+                    ma to znaczenie, gdy zaczynają się pojawiać podstrony; załóżmy, że jesteśmy na stronie
+                    cotenfrontend.pl/podstrona:<br>
+                    w pierwszym przypadku (ze slaszem), przeglądarka będzie szukała obrazka pod adresem
+                    cotenfrontend.pl/img/wtf.svg<br>
+                    w drugim przypadku będzie szukała pod adresem cotenfronted.pl/podstrona/img/wtf.svg
+                </p>
+                <p>
+                    komunikacja przeglądarka - serwer odbywa się na zasadzie request - response
+                </p>
+
+            </article>
+
+            <article>
+                <h3>
+
+                </h3>
+
+                <p>
+
+                </p>
+            </article>
+
+        </section>
+    </main>
+</body>
+
+</html>
